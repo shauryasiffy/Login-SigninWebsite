@@ -1,0 +1,401 @@
+/*Fonts
+font-family: 'Cinzel', serif;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Subrayada', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'WindSong', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Lato', sans-serif;
+
+*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("https://yellowdeckstudio.github.io/yellowdeck-card/public/images/bgAC.png");
+  background-attachment: fixed;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+
+/* Hero Section------------------------------------------------------------------------------------------------------------------------------------ */
+
+.hero {
+  /* background-image: url("https://yellowdeckstudio.github.io/yellowdeck-card/public/images/bgAC.png"); */
+  padding: 1rem 1rem 1rem 1rem;
+  background-attachment: fixed;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 90%;
+  text-align: center;
+  padding: 4rem 1rem 1rem 1rem;
+}
+
+/* .hero__container img{
+  height:9rem;
+  padding:1rem 1rem 1rem 1rem
+} */
+
+#logo {
+  height:10%;
+  width:10%;
+  margin-bottom:2rem;
+}
+#branding {
+  height:70%;
+  width:70%;
+}
+@media screen and (max-width: 700px) {
+
+  .hero {
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+  #logo {
+    height:40%;
+    width:40%;
+  }
+  #branding {
+    height:100%;
+    width:100%;
+  }
+}
+
+
+/* Services Section -----------------------------------------------------*/
+.services {
+  /* background-image: url("https://yellowdeckstudio.github.io/yellowdeck-card/public/images/bgAC.png"); */
+  background-attachment: fixed;
+  background-size:cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 1rem 1rem 1rem 1rem;
+
+}
+
+.services__wrapper {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
+}
+
+.services__card {
+  background: #ffffff;
+  margin: 10px;
+  height: 230px;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 1rem 5rem 1rem;
+  box-shadow: 5px 10px 10px 5px #8b7306;
+  border-radius:15px;
+  transition: 0.5s ease-out;
+}
+
+.services__card h2 {
+  color:rgb(37, 5, 5);
+  text-align: center;
+  font-size:1.3rem;
+  font-weight:900;
+}
+
+.services__card a {
+  color:rgb(0, 0, 0);
+  text-align: center;
+  font-size:1.5rem;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.services__card img {
+  text-align: center;
+  height:110px;
+}
+
+
+@media screen and (max-width: 1300px) {
+
+  .services{
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+  .services__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .services{
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;  
+  }
+  .services__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* About Section ------------------------------------------------------------- */
+.main {
+  /* background-image: url("https://yellowdeckstudio.github.io/yellowdeck-card/public/images/bgAC.png"); */
+  padding: 1rem 1rem 1rem 1rem;
+  background-attachment: fixed;
+  background-size:cover;
+  background-repeat: no-repeat;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main__container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 90%;
+  text-align: center;
+  padding: 0rem 0rem 0rem 0rem;
+
+}
+
+.main__content {
+  color: #ffffff;
+  width: 100%;
+  padding:50px;
+  margin-top: 50px;;
+}
+
+.map{
+  background: #ffffff;
+  /* margin: 1px; */
+
+  display: flex;
+  /* flex-direction: row-reverse; */
+  justify-content: center;
+  padding: 1rem 1rem 1rem 1rem;
+  box-shadow: 5px 10px 10px 5px #8b7306;
+  border-radius:15px;
+}
+
+
+.main__content iframe {
+  width:50rem; 
+  height:25rem;
+  padding: 0rem 0rem 0rem 0rem;
+  /* box-shadow: 10px 20px 20px 10px #816816; */
+  margin-bottom:0px;
+
+}
+
+
+.main__content h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 200;
+  color:black;
+  font-family: 'Playfair Display', serif;
+
+}
+
+.main__content p {
+  margin-top: 0rem;
+  font-size: 2.5rem;
+  font-weight: 200;
+  color:black;
+
+}
+
+.services__wrapper_1 {
+  display: inline-grid;
+  grid-template-columns: 1fr;
+}
+
+.services__card_1 {
+  color:black;
+  background: #fffbf3;
+  margin: 10px;
+  height: 90px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.2rem 1rem 1rem 1.2rem;
+  box-shadow: 5px 10px 10px 5px #8b7306;
+  border-radius:15px;
+  transition: 0.5s ease-out;
+}
+
+.services__card_1 a{
+  font-size:1.4rem;
+  font-family: 'Lato', sans-serif;
+
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .main__content {
+    text-align: center;
+    padding:1rem 1rem 1rem 1rem;
+  }
+
+
+  .main__content p {
+    font-size: 2rem;
+  }
+
+
+  .main__content iframe {
+    width:25rem; 
+    height:25rem;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+  .main__btn {
+    padding: 1rem 1rem 1rem 1rem ;
+  }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .main {
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+
+  .main__content iframe {
+    width:30rem; 
+    height:30rem;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+}
+
+
+@media screen and (max-width: 630px) {
+  .main__content iframe {
+    width:20rem; 
+    height:20rem;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+  .services__wrapper_1 {
+    grid-template-columns: 1fr;
+  }
+
+  .services__card_1 {
+    height: 100px;
+    width: 280px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .main__content iframe {
+    width:15rem; 
+    height:20rem;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+}
+
+/* Footer CSS ------------------------------------------------*/
+.footer__container {
+  background: #ffffff; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+#footer__logo {
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footer__logo h1 {
+  font-family: 'Lato', sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  padding:1rem 1rem 1rem 1rem
+
+}
+.footer__logo a{
+  font-size:1.5rem;
+  justify-content: center;
+  align-items: center;
+  padding:1rem 1rem 1rem 1rem
+}
+
+@media screen and (max-width: 800px) {
+
+  #footer__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .footer__logo h1 {
+    font-size: 2rem;
+    font-weight:bold;
+  }
+  .footer__logo a{
+    font-size:1.4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  #footer__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .footer__logo h1 {
+    font-size: 1.3rem;
+    font-weight:bold;
+  }
+  .footer__logo a{
+    font-size:1rem;
+  }
+}
